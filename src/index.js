@@ -6,10 +6,8 @@ const scoresBoard = new ScoresBoard('.hits', '.misses');
 
 const game = new Game({
   size: 16,
-  misses: scoresBoard.misses,
   hitHandler: scoresBoard.onEncreaseHits,
   missHandler: scoresBoard.onEncreaseMisses,
 });
 
 game.startGame();
-// setTimeout(() => game.gameOver(), 3000);
