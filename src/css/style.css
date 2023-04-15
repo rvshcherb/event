@@ -1,0 +1,74 @@
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.field {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  background-color: yellow;
+  cursor: url('../img/ham.png') 50 10 , pointer;
+}
+
+.field.game-over {
+  cursor: auto;
+}
+
+.cell {
+  box-sizing: border-box;
+  height: 100px;
+  flex-basis: 25%;
+  border: 2px solid black;
+}
+
+.cell.target {
+  background-image: url('../img/goblin.png');
+  background-size: contain;
+}
+
+.scores-board {
+  display: flex;
+  justify-content: center;
+}
+
+.scores-board__section {
+  display: flex;
+  align-items: baseline;
+  margin-right: 20px;
+}
+
+.scores-board__scores {
+  font-size: 24px;
+}
+
+.scores-board__header {
+  margin-right: 10px;
+}
+
+.gameover-notice {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  color: red;
+  border: 5px solid red;
+  transform: rotate(-45deg);
+}
+
+.gameover-notice p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+}
