@@ -52,6 +52,7 @@ export default class Game {
   _onHit(evt) {
     if (evt.target.classList.contains('target')) {
       this.hits += 1;
+      evt.target.classList.remove('target');
       this.hitHandler(this.hits);
     } else {
       this.misses += 1;
